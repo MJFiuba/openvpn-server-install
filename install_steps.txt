@@ -23,4 +23,4 @@ verb 0
  
 Once it ends, you can run it again to add more users, remove some of them or even completely uninstall OpenVPN.
 
-Now you should go to the client and download the .ovpn file .
+Now you should go to the client and download the .ovpn file (e.g. using SFTP) or transfer it from the server (e.g. using SCP)
