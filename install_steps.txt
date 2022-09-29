@@ -10,14 +10,14 @@ sudo openvpn-install.sh
 
 This script will let you set up your own VPN server in no more than a minute, even if you haven't used OpenVPN before. It has been designed to be as unobtrusive and universal as possible.
 Notes:
-Markup : * for most questions, the default answer will work just fine
-         * the default port for OpenVPN is 1194 (UDP)
-         * you current DNS server should work, but you can use 1.1.1.1 (Cloudflare) just in case
-         * the config files for the server and client are placed in the root directory by default
-         ** it is necessary to move it to your local user home directory and give it the correct priviledges
+* for most questions, the default answer will work just fine
+* the default port for OpenVPN is 1194 (UDP)
+* you current DNS server should work, but you can use 1.1.1.1 (Cloudflare) just in case
+* the config files for the server and client are placed in the root directory by default
+** it is necessary to move it to your local user home directory and give it the correct priviledges
 sudo mv /root/<client_name>.ovpn /home/<local_user_name>
 chown <local_user_name> <client_name>.ovpn
-         * you can disable the logs on the VPN server editing the config file /etc/openvpn/server/server.conf , and then restart the openvpn-server service.
+* you can disable the logs on the VPN server editing the config file /etc/openvpn/server/server.conf , and then restart the openvpn-server service.
 #verb 3
 verb 0
 
